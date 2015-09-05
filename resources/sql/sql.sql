@@ -1,0 +1,1 @@
+create table user(USER_NO int not null AUTO_INCREMENT, USER_ID varchar(20), USER_NAME varchar(20), EMAIL varchar(30), PASSWORD varchar(15), PHONE varchar(15), CODE varchar(2) DEFAULT '0',  PRIMARY KEY (USER_NO));
