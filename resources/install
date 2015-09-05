@@ -1,0 +1,9 @@
+npm install sql
+
+npm install mysql
+
+npm install passport
+
+npm install passport-facebook
+
+npm install passport-google
