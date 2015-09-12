@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -8,7 +7,10 @@ var express = require('express')
   , user = require('./routes/user')
   , main = require('./routes/main')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  
+  ;
+	
 
 var app = express();
 
@@ -21,6 +23,9 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
+app.use(express.static(path.join(__dirname, 'resources')));
+	
+
 app.use(express.static(path.join(__dirname, 'resources')));
 
 //var client = mysql.createConnection({
@@ -36,6 +41,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.get('/main', main.index);
+app.post('/reg', main.reg);
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/main', main.index);
