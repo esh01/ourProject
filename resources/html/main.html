@@ -5,7 +5,15 @@
 <title>Insert title here</title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/main.css" rel="stylesheet">
+<style type="text/css">
+#main-right {
+ background-color: red;
+}
 
+#main-left {
+background-color: yellow;
+}
+</style>
 </head>
 <body>
 	<!-- <form method="post" action="/reg">
@@ -14,6 +22,7 @@
 		<label>패스워드 : </label><input type="password" name="pwd" ><br>
 		<button type="submit">등록</button>
 	</form> -->
+<nav class="navbar navbar-default navbar-static-top">
 	<div class="navbar-wrapper">
             <div class="container-fluid">
                 <nav class="navbar navbar-fixed-top">
@@ -26,20 +35,32 @@
                             <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="#">Logo</a>
-                            dd
+                            
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
-                            
                             <ul class="nav navbar-nav pull-right">
-                                
-                                <li class=""><a href="#">Search</a></li>
+                                <li class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed in as  <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Login</a></li>
+                                            <li><a href="#">Sign up</a></li>
+                                        </ul>
+                                </li>
+                                <li class=""><a href="#">Logout</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-	
+ </nav>
+		<div class="container-fluid">
+		<div class="col-md-2" id="main-left">
+			left
+		</div>
+		<div class="col-md-10" id="main-right">
+			right
+		</div>
+		</div>
 	
 </body>
 </html>
