@@ -6,29 +6,49 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/main.css" rel="stylesheet">
 <style type="text/css">
-#main-blankLeft {
- background-color: red;
-}
+	#main-Left{
+	 background-color: blue;
+	}
+	
+	#main-Center{
+	 background-color: white;
+	}
+	
+	#main-Right{
+	 background-color: green;
+	}
+/* 왼쪽 부분 설정 */
+	#left-Up{
+		 background-color: green;
+	}
+	#left-Down{
+	 	background-color: purple;
+	}
+/* 왼쪽 부분 설정 */
 
 
-#main-Left{
- background-color: blue;
-}
+/* 가운데 부분 설정 */
+	#center-Up{
+		 background-color: yellow;
+	}
+	#center-Down{
+	 	background-color: white;
+	}
+/* 가운데 부분 설정 */
 
-#main-Center{
- background-color: white;
-}
 
-#main-Right{
- background-color: green;
-}
-
-#main-blankRight {
-background-color: yellow;
-}
+/* 오른쪽 부분 설정 */
+	#right-Up{
+		 background-color: red;
+	}
+	#right-Down{
+	 	background-color: blue;
+	}
+/* 오른쪽 부분 설정 */
 </style>
 </head>
 <body>
+
 <nav class="navbar navbar-default navbar-static-top">
 	<div class="navbar-wrapper">
             <div class="container-fluid">
@@ -52,7 +72,7 @@ background-color: yellow;
                                             <li><a href="#">Sign up</a></li>
                                         </ul>
                                 </li>
-                                <li class=""><a href="#">Logout</a></li>
+                                <li class=""><a href="#">Logoutt</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,18 +87,21 @@ background-color: yellow;
 		</div>
 		
 		<div class="col-md-2" id="main-Left">
-			main-Left
+			<div class="row" id="left-Up" style="height: 234px">up</div>
+			<div class="row" id='left-Down' style="height: 700px">down</div>
 		</div>
 		
 		<div class="col-md-6" id="main-Center">
-			center
+			<div class="row" id="center-Up" style="height: 234px">up</div>
+			<div class="row" id='center-Down' style="height: 700px">down</div>
 		</div>
 		
 		<div class="col-md-2" id="main-Right">
-			main-Right
+			<div class="row" id="right-Up" style="height: 234px">up</div>
+			<div class="row" id='right-Down' style="height: 700px">down</div>
 		</div>
 		
-		<div class="col-md-1" id="main-blankRight">
+		<div class="col-md-1">
 			left
 		</div>
 		</div>
