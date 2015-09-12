@@ -6,22 +6,29 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/main.css" rel="stylesheet">
 <style type="text/css">
-#main-right {
+#main-blankLeft {
  background-color: red;
 }
 
-#main-left {
+
+#main-Left{
+ background-color: blue;
+}
+
+#main-Center{
+ background-color: white;
+}
+
+#main-Right{
+ background-color: green;
+}
+
+#main-blankRight {
 background-color: yellow;
 }
 </style>
 </head>
 <body>
-	<!-- <form method="post" action="/reg">
-		<label>이름 : </label><input type="text" name="user" ><br>
-		<label>이메일 : </label><input type="email" name="email" ><br>
-		<label>패스워드 : </label><input type="password" name="pwd" ><br>
-		<button type="submit">등록</button>
-	</form> -->
 <nav class="navbar navbar-default navbar-static-top">
 	<div class="navbar-wrapper">
             <div class="container-fluid">
@@ -54,11 +61,25 @@ background-color: yellow;
         </div>
  </nav>
 		<div class="container-fluid">
-		<div class="col-md-2" id="main-left">
+		
+		<div class="col-md-1" id="main-blankLeft">
 			left
 		</div>
-		<div class="col-md-10" id="main-right">
-			right
+		
+		<div class="col-md-2" id="main-Left">
+			main-Left
+		</div>
+		
+		<div class="col-md-6" id="main-Center">
+			center
+		</div>
+		
+		<div class="col-md-2" id="main-Right">
+			main-Right
+		</div>
+		
+		<div class="col-md-1" id="main-blankRight">
+			left
 		</div>
 		</div>
 	
